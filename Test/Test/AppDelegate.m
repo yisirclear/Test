@@ -22,6 +22,8 @@
     
     int temp = 20;
     
+    NSLog(@"%d",temp);
+    
     return YES;
 }
 
