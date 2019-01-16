@@ -21,6 +21,7 @@
     
     NSLog(@"new Test");
     //
+    //
     NSLog(@"master_test");
     
     [super viewDidLoad];
