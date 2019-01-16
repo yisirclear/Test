@@ -16,6 +16,8 @@
 
 - (void)viewDidLoad {
     
+    NSLog(@"111111");
+    
     NSLog(@"new Test");
     
     NSLog(@"master_test");
