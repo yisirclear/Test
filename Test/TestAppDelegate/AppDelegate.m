@@ -24,6 +24,8 @@
 
     NSString *string = @"testAppDelegate";
     
+    NSString *string1 = @"testAppDelegate112";
+
     return YES;
 }
 
