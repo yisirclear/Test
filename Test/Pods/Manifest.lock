@@ -1,16 +1,30 @@
 PODS:
-  - pod_test (0.0.2)
+  - AFNetworking (3.2.1):
+    - AFNetworking/NSURLSession (= 3.2.1)
+    - AFNetworking/Reachability (= 3.2.1)
+    - AFNetworking/Security (= 3.2.1)
+    - AFNetworking/Serialization (= 3.2.1)
+    - AFNetworking/UIKit (= 3.2.1)
+  - AFNetworking/NSURLSession (3.2.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.2.1)
+  - AFNetworking/Security (3.2.1)
+  - AFNetworking/Serialization (3.2.1)
+  - AFNetworking/UIKit (3.2.1):
+    - AFNetworking/NSURLSession
 
 DEPENDENCIES:
-  - pod_test
+  - AFNetworking (~> 3.0)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
-    - pod_test
+    - AFNetworking
 
 SPEC CHECKSUMS:
-  pod_test: 44c6fbabe6b804756b9adc56bcfa0940f7b5fdd7
+  AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
 
-PODFILE CHECKSUM: 87e211d01310fc570e7b2c6df116627f5920b637
+PODFILE CHECKSUM: d17ab279a154c648370badb33ca96745f943e2c3
 
 COCOAPODS: 1.5.3
