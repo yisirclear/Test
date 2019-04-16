@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		523144AC226583DF00C07C42 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 523144AB226583DE00C07C42 /* AppDelegate.m */; };
-		52D6E87922659A6B0053042C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52D6E87722659A6B0053042C /* ViewController.m */; };
 		7B2190C11F57EE5D00668D02 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B2190C01F57EE5D00668D02 /* main.m */; };
+		7B2190C71F57EE5D00668D02 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B2190C61F57EE5D00668D02 /* ViewController.m */; };
 		7B2190CA1F57EE5D00668D02 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B2190C81F57EE5D00668D02 /* Main.storyboard */; };
 		7B2190CC1F57EE5D00668D02 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B2190CB1F57EE5D00668D02 /* Assets.xcassets */; };
 		7B2190CF1F57EE5D00668D02 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B2190CD1F57EE5D00668D02 /* LaunchScreen.storyboard */; };
