@@ -1,0 +1,16 @@
+PODS:
+  - pod_test (0.0.2)
+
+DEPENDENCIES:
+  - pod_test
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - pod_test
+
+SPEC CHECKSUMS:
+  pod_test: 44c6fbabe6b804756b9adc56bcfa0940f7b5fdd7
+
+PODFILE CHECKSUM: 87e211d01310fc570e7b2c6df116627f5920b637
+
+COCOAPODS: 1.5.3

@@ -18,11 +18,11 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
-    NSLog(@"hello world");
-    
     int temp = 20;
     
     NSLog(@"%d",temp);
+
+    NSString *string = @"testAppDelegate";
     
     return YES;
 }

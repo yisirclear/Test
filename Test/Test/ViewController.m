@@ -15,8 +15,8 @@
 @implementation ViewController
 
 - (void)viewDidLoad {
-    
-    NSLog(@"22222");
+
+    NSLog(@"111111");
     
     NSLog(@"new Test");
     
