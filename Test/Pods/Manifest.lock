@@ -1,34 +1,22 @@
 PODS:
-  - AFNetworking (3.2.1):
-    - AFNetworking/NSURLSession (= 3.2.1)
-    - AFNetworking/Reachability (= 3.2.1)
-    - AFNetworking/Security (= 3.2.1)
-    - AFNetworking/Serialization (= 3.2.1)
-    - AFNetworking/UIKit (= 3.2.1)
-  - AFNetworking/NSURLSession (3.2.1):
-    - AFNetworking/Reachability
-    - AFNetworking/Security
-    - AFNetworking/Serialization
-  - AFNetworking/Reachability (3.2.1)
-  - AFNetworking/Security (3.2.1)
-  - AFNetworking/Serialization (3.2.1)
-  - AFNetworking/UIKit (3.2.1):
-    - AFNetworking/NSURLSession
+  - SDWebImage (5.0.1):
+    - SDWebImage/Core (= 5.0.1)
+  - SDWebImage/Core (5.0.1)
   - Teacher (0.3.0)
 
 DEPENDENCIES:
-  - AFNetworking (~> 3.0)
+  - SDWebImage
   - Teacher
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
-    - AFNetworking
+    - SDWebImage
     - Teacher
 
 SPEC CHECKSUMS:
-  AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
+  SDWebImage: 27dd2c9ea07a2252f94557c9fbb6105ee94b74c9
   Teacher: 4e940843c995e8b92474b7de4c0031d252b4cf2e
 
-PODFILE CHECKSUM: 7a8b0d4b054b344f6e4b2961a0d14e2681bdb171
+PODFILE CHECKSUM: ef0ecbd6c92a2166ef0fadeda412f238b4239066
 
 COCOAPODS: 1.5.3
