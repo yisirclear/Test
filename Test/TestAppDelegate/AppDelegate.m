@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import <Teacher.h>
 
 @interface AppDelegate ()
 
@@ -21,6 +22,10 @@
     int temp = 20;
     
     NSLog(@"%d",temp);
+    
+    Teacher *teacher = [[Teacher alloc] init];
+    [teacher helloTeacher];
+    [teacher sayHello];
 
     NSString *string = @"testAppDelegate";
     

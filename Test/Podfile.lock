@@ -14,17 +14,21 @@ PODS:
   - AFNetworking/Serialization (3.2.1)
   - AFNetworking/UIKit (3.2.1):
     - AFNetworking/NSURLSession
+  - Teacher (0.3.0)
 
 DEPENDENCIES:
   - AFNetworking (~> 3.0)
+  - Teacher
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - AFNetworking
+    - Teacher
 
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
+  Teacher: 4e940843c995e8b92474b7de4c0031d252b4cf2e
 
-PODFILE CHECKSUM: d17ab279a154c648370badb33ca96745f943e2c3
+PODFILE CHECKSUM: 7a8b0d4b054b344f6e4b2961a0d14e2681bdb171
 
 COCOAPODS: 1.5.3
