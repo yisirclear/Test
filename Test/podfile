@@ -2,7 +2,7 @@ platform :ios, '8.0'
 
 target 'Test' do
 
-pod 'SDWebImage'
 pod 'Teacher'
+pod 'YzqTestKit',:git=>'https://github.com/yisirclear/YzqTestKit.git'
 
 end
