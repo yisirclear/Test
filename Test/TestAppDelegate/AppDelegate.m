@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import <Teacher.h>
+#import <Teachers.h>
 
 @interface AppDelegate ()
 
@@ -15,22 +16,27 @@
 
 @implementation AppDelegate
 
+- (void)rsString:(NSString *)string {
+    NSMutableString *mString = [[NSMutableString alloc] initWithString:string];
+    
+    for (int i = 0; i < (string.length + 1) / 2; i++) {
+        [mString replaceCharactersInRange:NSMakeRange(i, 1) withString:[string substringWithRange:NSMakeRange(string.length - 1 - i, 1)]];
+        [mString replaceCharactersInRange:NSMakeRange(string.length - i - 1, 1) withString:[string substringWithRange:NSMakeRange(i, 1)]];
+    }
+    
+    NSLog(@"%@",mString);
+}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
-    int temp = 20;
     
-    NSLog(@"%d",temp);
+    NSNumber *cc = @(1);
+    NSLog(@"%d",[cc boolValue]);
     
-    Teacher *teacher = [[Teacher alloc] init];
-    [teacher helloTeacher];
-    [teacher sayHello];
-
-    NSString *string = @"testAppDelegate";
     
-    NSString *string1 = @"testAppDelegate112";
-
+    //[self rsString:@"abcdefgh"];
+    
     return YES;
 }
 

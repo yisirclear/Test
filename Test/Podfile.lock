@@ -1,6 +1,6 @@
 PODS:
   - Teacher (0.3.0)
-  - YzqTestKit (0.1.0)
+  - YzqTestKit (0.1.1)
 
 DEPENDENCIES:
   - Teacher
@@ -16,12 +16,12 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   YzqTestKit:
-    :commit: 10f80fe1d8a17d059004a04afc2b5a2670a6712b
+    :commit: 4bc0f2ecaf8a8c89fd8177df5da1ec8600fb4e6b
     :git: https://github.com/yisirclear/YzqTestKit.git
 
 SPEC CHECKSUMS:
   Teacher: 4e940843c995e8b92474b7de4c0031d252b4cf2e
-  YzqTestKit: 2000367a0c058ab8ae2500d38b0762bb2fb51f8f
+  YzqTestKit: 1617f5aa711b6ebd7aeef615c18279ee0d220883
 
 PODFILE CHECKSUM: e33a275408efd85615dd3c8a41f5415e9b5298f6
 

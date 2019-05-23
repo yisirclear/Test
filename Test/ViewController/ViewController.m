@@ -15,15 +15,9 @@
 @implementation ViewController
 
 - (void)viewDidLoad {
-
-    NSLog(@"111111");
-    
-    NSLog(@"new Test");
-    
-    NSLog(@"master_test");
-    
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    [self reverseString:@"hello"];
 }
 
 

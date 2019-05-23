@@ -14,4 +14,8 @@
     NSLog(@"hello Teachers");
 }
 
+- (void)helloTeachers1 {
+    NSLog(@"hello Teachers1");
+}
+
 @end
