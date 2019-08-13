@@ -1,14 +1,29 @@
 PODS:
+  - SDWebImage (5.1.0):
+    - SDWebImage/Core (= 5.1.0)
+  - SDWebImage/Core (5.1.0)
+  - SocketRocket (0.5.1)
   - Teacher (0.3.0)
+  - WeexSDK (0.26.0)
+  - WXDevtool (0.24.0):
+    - SocketRocket
+    - WeexSDK
   - YzqTestKit (0.1.1)
 
 DEPENDENCIES:
+  - SDWebImage
   - Teacher
+  - WeexSDK
+  - WXDevtool (= 0.24.0)
   - YzqTestKit (from `https://github.com/yisirclear/YzqTestKit.git`)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - SDWebImage
+    - SocketRocket
     - Teacher
+    - WeexSDK
+    - WXDevtool
 
 EXTERNAL SOURCES:
   YzqTestKit:
@@ -20,9 +35,13 @@ CHECKOUT OPTIONS:
     :git: https://github.com/yisirclear/YzqTestKit.git
 
 SPEC CHECKSUMS:
+  SDWebImage: fb387001955223213dde14bc08c8b73f371f8d8f
+  SocketRocket: d57c7159b83c3c6655745cd15302aa24b6bae531
   Teacher: 4e940843c995e8b92474b7de4c0031d252b4cf2e
+  WeexSDK: 55b67d1c411eb28ec1e356f763a335d0ddcc5324
+  WXDevtool: 95b70c73c06fc3299d65bd53ba4b3e0b0087f3cb
   YzqTestKit: 1617f5aa711b6ebd7aeef615c18279ee0d220883
 
-PODFILE CHECKSUM: e33a275408efd85615dd3c8a41f5415e9b5298f6
+PODFILE CHECKSUM: ff10e6c764dbfcfacfa8c08b427cb76de96d9f37
 
 COCOAPODS: 1.5.3

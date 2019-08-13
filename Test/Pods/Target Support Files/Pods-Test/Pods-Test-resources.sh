@@ -91,6 +91,20 @@ EOM
       ;;
   esac
 }
+if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_resource "${PODS_ROOT}/WeexSDK/pre-build/native-bundle-main.js"
+  install_resource "${PODS_ROOT}/WeexSDK/pre-build/weex-main-jsfm.js"
+  install_resource "${PODS_ROOT}/WeexSDK/pre-build/weex-polyfill.js"
+  install_resource "${PODS_ROOT}/WeexSDK/pre-build/weex-rax-api.js"
+  install_resource "${PODS_ROOT}/WeexSDK/ios/sdk/WeexSDK/Resources/wx_load_error@3x.png"
+fi
+if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_resource "${PODS_ROOT}/WeexSDK/pre-build/native-bundle-main.js"
+  install_resource "${PODS_ROOT}/WeexSDK/pre-build/weex-main-jsfm.js"
+  install_resource "${PODS_ROOT}/WeexSDK/pre-build/weex-polyfill.js"
+  install_resource "${PODS_ROOT}/WeexSDK/pre-build/weex-rax-api.js"
+  install_resource "${PODS_ROOT}/WeexSDK/ios/sdk/WeexSDK/Resources/wx_load_error@3x.png"
+fi
 
 mkdir -p "${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}"
 rsync -avr --copy-links --no-relative --exclude '*/.svn/*' --files-from="$RESOURCES_TO_COPY" / "${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}"

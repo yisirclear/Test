@@ -9,12 +9,29 @@
 #import "AppDelegate.h"
 #import <Teacher.h>
 #import <Teachers.h>
+#import <WeexSDK.h>
+#import "ViewController.h"
+#import <WXDevtool/WXDevTool.h>
 
 @interface AppDelegate ()
 
 @end
 
 @implementation AppDelegate
+
+- (void)weexSDKSetup {
+    [WXAppConfiguration setAppGroup:@"Test"];
+    [WXAppConfiguration setAppName:@"Test"];
+    [WXAppConfiguration setAppVersion:@"1.0"];
+    [WXSDKEngine initSDKEnvironment];
+    
+    [WXDevTool setDebug:YES];
+    
+    [WXLog setLogLevel:WXLogLevelWarning];
+    
+    //
+    
+}
 
 - (void)rsString:(NSString *)string {
     NSMutableString *mString = [[NSMutableString alloc] initWithString:string];
@@ -30,9 +47,19 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
+    [self weexSDKSetup];
     
     NSNumber *cc = @(1);
     NSLog(@"%d",[cc boolValue]);
+    
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    self.window.backgroundColor = [UIColor whiteColor];
+    
+    ViewController *v = [[ViewController alloc] init];
+    UINavigationController *nv = [[UINavigationController alloc] initWithRootViewController:v];
+    self.window.rootViewController = nv;
+    
+    [self.window makeKeyAndVisible];
     
     
     //[self rsString:@"abcdefgh"];
