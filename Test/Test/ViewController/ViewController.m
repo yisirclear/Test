@@ -8,6 +8,8 @@
 
 #import "ViewController.h"
 #import <WeexSDK.h>
+#import <JsenNetworkingManager.h>
+#import <YYModel.h>
 
 @interface ViewController ()
 
@@ -21,6 +23,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [WXAppConfiguration setAppGroup:@"Test"];
+    [WXAppConfiguration setAppName:@"Test"];
+    [WXAppConfiguration setAppVersion:@"1.0"];
+    [WXSDKEngine initSDKEnvironment];
+    
+    [WXLog setLogLevel:WXLogLevelWarning];
     self.view.backgroundColor = [UIColor whiteColor];
     
     _instance = [[WXSDKInstance alloc] init];
@@ -45,11 +53,45 @@
         NSLog(@"渲染完成");
     };
     
+    [self downloadTask];
+    
 //file:///var/containers/Bundle/Application/8169ADF7-8443-4817-B93D-61C02B4C0FEC/Test.app/index2.js
 
     
-    NSLog(@"%@",self.url.absoluteString);
-    [_instance renderWithURL:self.url options:@{@"bundleUrl":[self.url absoluteString]} data:nil];
+    NSURL *url1 = [[NSBundle mainBundle] URLForResource:@"index5" withExtension:@"js"];
+    
+    
+    NSLog(@"%@",url1.absoluteString);
+    [_instance renderWithURL:url1 options:@{@"bundleUrl":[url1 absoluteString]} data:nil];
+}
+
+- (void)downloadTask {
+    
+    NSString *docPath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject];
+    
+    NSLog(@"%@",docPath);
+    
+//    NSString *relPath = [NSString stringWithFormat:@"%@/weex/",docPath];
+    NSURL *docurl = [[NSURL alloc] initFileURLWithPath:docPath];
+    NSLog(@"relpath - %@",docurl);
+    
+    NSString *picString = @"http://img.zcool.cn/community/0142135541fe180000019ae9b8cf86.jpg@1280w_1l_2o_100sh.png";
+
+    NSString *urlString = @"http://10.255.4.92:8081/dist/components/ApplyDissent.js";
+    [[JsenNetworkingManager manager] downloadWithUrl:urlString filePath:docurl fileName:@"test.js" progress:^(NSProgress * _Nonnull uploadProgress) {
+        
+        NSLog(@"1.-----------%@",uploadProgress);
+        
+    } success:^(JsenNetworkingSuccessResponse * _Nonnull response) {
+        
+        NSLog(@"2.-----------%@",[response yy_modelDescription]);
+        
+    } failed:^(JsenNetworkingFailedResponse * _Nonnull response) {
+        
+        NSLog(@"3.-----------%@",response);
+        
+    } finished:nil];
+    
 }
 
 - (NSURL *)url {

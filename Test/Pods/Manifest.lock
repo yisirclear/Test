@@ -1,16 +1,38 @@
 PODS:
-  - SDWebImage (5.1.0):
-    - SDWebImage/Core (= 5.1.0)
-  - SDWebImage/Core (5.1.0)
+  - AFNetworking (3.2.1):
+    - AFNetworking/NSURLSession (= 3.2.1)
+    - AFNetworking/Reachability (= 3.2.1)
+    - AFNetworking/Security (= 3.2.1)
+    - AFNetworking/Serialization (= 3.2.1)
+    - AFNetworking/UIKit (= 3.2.1)
+  - AFNetworking/NSURLSession (3.2.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.2.1)
+  - AFNetworking/Security (3.2.1)
+  - AFNetworking/Serialization (3.2.1)
+  - AFNetworking/UIKit (3.2.1):
+    - AFNetworking/NSURLSession
+  - JsenKit/JsenNetworking (1.3.38):
+    - AFNetworking
+    - YYModel
+  - JsenKit/JsenProgressHUD (1.3.38)
+  - SDWebImage (5.1.1):
+    - SDWebImage/Core (= 5.1.1)
+  - SDWebImage/Core (5.1.1)
   - SocketRocket (0.5.1)
   - Teacher (0.3.0)
   - WeexSDK (0.26.0)
   - WXDevtool (0.24.0):
     - SocketRocket
     - WeexSDK
+  - YYModel (1.0.4)
   - YzqTestKit (0.1.1)
 
 DEPENDENCIES:
+  - JsenKit/JsenNetworking
+  - JsenKit/JsenProgressHUD
   - SDWebImage
   - Teacher
   - WeexSDK
@@ -19,11 +41,14 @@ DEPENDENCIES:
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - AFNetworking
+    - JsenKit
     - SDWebImage
     - SocketRocket
     - Teacher
     - WeexSDK
     - WXDevtool
+    - YYModel
 
 EXTERNAL SOURCES:
   YzqTestKit:
@@ -35,13 +60,16 @@ CHECKOUT OPTIONS:
     :git: https://github.com/yisirclear/YzqTestKit.git
 
 SPEC CHECKSUMS:
-  SDWebImage: fb387001955223213dde14bc08c8b73f371f8d8f
+  AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
+  JsenKit: 3e5b068371d104fcf1c2e0b6c068272d63cb0dc8
+  SDWebImage: 96d7f03415ccb28d299d765f93557ff8a617abd8
   SocketRocket: d57c7159b83c3c6655745cd15302aa24b6bae531
   Teacher: 4e940843c995e8b92474b7de4c0031d252b4cf2e
   WeexSDK: 55b67d1c411eb28ec1e356f763a335d0ddcc5324
   WXDevtool: 95b70c73c06fc3299d65bd53ba4b3e0b0087f3cb
+  YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
   YzqTestKit: 1617f5aa711b6ebd7aeef615c18279ee0d220883
 
-PODFILE CHECKSUM: ff10e6c764dbfcfacfa8c08b427cb76de96d9f37
+PODFILE CHECKSUM: 999b952e9e88f9e0656b2524309f444a8c8bb408
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.7.5

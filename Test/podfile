@@ -7,6 +7,9 @@ pod 'SDWebImage'
 pod 'Teacher'
 pod 'YzqTestKit',:git=>'https://github.com/yisirclear/YzqTestKit.git'
 pod  'WXDevtool', '0.24.0', :configurations => ['Debug']
+pod 'JsenKit/JsenNetworking'
+pod 'JsenKit/JsenProgressHUD'
+
 
 
 end
